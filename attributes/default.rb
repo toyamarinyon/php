@@ -94,6 +94,7 @@ default['php']['configure_options'] = %W{--prefix=#{php['prefix_dir']}
                                          --with-fpm-group=#{php['fpm_group']}
                                          --with-zlib
                                          --with-openssl
+                                         --with-kerberos
                                          --with-bz2
                                          --with-curl
                                          --enable-zip
