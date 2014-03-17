@@ -93,33 +93,26 @@ default['php']['configure_options'] = %W{--prefix=#{php['prefix_dir']}
                                          --with-fpm-group=#{php['fpm_group']}
                                          --with-zlib
                                          --with-openssl
-                                         --with-kerberos
                                          --with-bz2
                                          --with-curl
-                                         --enable-ftp
                                          --enable-zip
                                          --enable-exif
                                          --with-gd
                                          --enable-gd-native-ttf
-                                         --with-gettext
                                          --with-gmp
                                          --with-mhash
                                          --with-iconv
                                          --with-imap
                                          --with-imap-ssl
                                          --enable-sockets
-                                         --enable-soap
                                          --with-xmlrpc
-                                         --with-libevent-dir
                                          --with-mcrypt
                                          --enable-mbstring
                                          --with-t1lib
                                          --with-mysql
                                          --with-mysqli=/usr/bin/mysql_config
                                          --with-mysql-sock
-                                         --with-sqlite3
-                                         --with-pdo-mysql
-                                         --with-pdo-sqlite}
+                                         --with-pdo-mysql}
 
 default['php']['ini']['template'] = "php.ini.erb"
 default['php']['ini']['cookbook'] = "php"
